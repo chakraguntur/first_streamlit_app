@@ -27,7 +27,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 streamlit.header("Fruityvice Fruit Advice!")
 #streamlit.text(fruityvice_response.json())
 try:
-   fruit_choice = streamlit.text_input('Which fruit would you like information about?')
+   fruit_choice = [streamlit.text_input('Which fruit would you like information about?')]
    if not fruit_chioce:
     streamlit.error('Please select fruit choice to get information.')
    else: 
